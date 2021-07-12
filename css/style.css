@@ -52,6 +52,11 @@ hr {
 .age {
   font-size: 16px;
   display: block;
+  transition: 100ms ease;
+}
+
+.age:hover {
+  text-decoration: underline;
 }
 
 .price {
@@ -60,6 +65,11 @@ hr {
   display: block;
   padding: 10px 0 10px 0;
   color: brown;
+  transition: 100ms ease;
+}
+
+.price:hover {
+  color: red;
 }
 
 p {
