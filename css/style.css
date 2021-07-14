@@ -19,8 +19,69 @@ hr {
   border: 1px solid white;
 }
 
-.main {
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+  margin: -6px 0 0 0;
+}
+
+.basket-img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 0 10px 0 0;
+  background-image: url(/icons/to-buy-cat-button.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.basket-img:hover {
+  transform: scale(1.1);
+}
+
+.basket-img:active {
+  background-image: url(/icons/heart-button.png);
+  transform: translateY(3px);
+}
+
+.your-hands {
+  color: darkblue;
+  font-size: 22px;
+  display: inline-block;
+  transform: translateY(-5px);
+}
+
+.nav {
   max-width: 1110px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  background-color: blanchedalmond;
+  font-size: 18px;
+}
+
+.owner {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0 15px 0 0;
+}
+
+.granny-phone {
+  display: inline-block;
+}
+
+.nav a:hover {
+  color: red;
+}
+
+.main {
+  width: 1110px;
   height: auto;
   margin: 0 auto;
   padding: 15px 0 15px 0;
@@ -28,8 +89,8 @@ hr {
 }
 
 .cat {
-  max-width: 260px;
-  max-height: 600px;
+  width: 260px;
+  height: 450px;
   background-color: transparent;
   box-sizing: border-box;
   margin: 25px 0 25px 11px;
@@ -37,11 +98,34 @@ hr {
   overflow: hidden;
 }
 
+.photo-wrap {
+  width: 260px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.photo {
+  max-width: 260px;
+  max-height: 200px;
+  transition: 500ms ease;
+  position: absolute;
+  bottom: 0;
+  object-fit: contain;
+}
+
+.photo:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+
 .name {
   font-size: 24px;
   color: darkblue;
   display: block;
   margin: 0 0 8px 0;
+  padding: 5px 0 0 0;
   transition: 100ms ease;
 }
 
@@ -59,15 +143,33 @@ hr {
   text-decoration: underline;
 }
 
+.to-buy-button {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 10px 15px 0 5px;
+  border: none;
+  transition: 100ms ease;
+  background-color: transparent;
+  background-position: center;
+}
+
+.to-buy-button:hover {
+  transform: scale(1.1);
+}
+
+.to-buy-button:active {
+  background-image: url(/icons/heart-button.png);
+}
+
 .price {
   font-size: 24px;
   font-weight: 700;
-  display: block;
-  padding: 10px 0 10px 0;
+  padding: 0 0 5px 0;
+  display: inline-block;
   color: brown;
   transition: 100ms ease;
 }
-
 .price:hover {
   color: red;
 }
@@ -80,13 +182,11 @@ a {
   text-decoration: none;
 }
 
-.photo {
-  width: 260px;
-  transition: 500ms ease;
+footer {
+  max-width: 1110px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: blanchedalmond;
 }
 
-.photo:hover {
-  opacity: 0.7;
-  transform: scale(1.1);
-}
 
