@@ -176,6 +176,8 @@ hr {
 
 p {
   text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 a {
