@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+
+
+/*  --- Header ---  */
+
 h1 {
   max-width: 1110px;
   height: auto;
@@ -19,8 +23,38 @@ hr {
   border: 1px solid white;
 }
 
+
+
+/*  --- Navigation ---  */
+
+.nav {
+  max-width: 1110px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  background-color: blanchedalmond;
+  font-size: 18px;
+}
+
+.nav a:hover {
+  color: red;
+}
+
 .left {
   float: left;
+}
+
+.left-owner {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0 15px 0 0;
+}
+
+.left-phone {
+  display: inline-block;
 }
 
 .right {
@@ -47,38 +81,16 @@ hr {
   transform: translateY(3px);
 }
 
-.basket {
+.basket-name {
   color: darkblue;
   font-size: 22px;
   display: inline-block;
   transform: translateY(-5px);
 }
 
-.nav {
-  max-width: 1110px;
-  height: 60px;
-  margin: 0 auto;
-  padding: 20px 20px;
-  box-sizing: border-box;
-  background-color: blanchedalmond;
-  font-size: 18px;
-}
 
-.owner {
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 700;
-  font-style: italic;
-  margin: 0 15px 0 0;
-}
 
-.granny-phone {
-  display: inline-block;
-}
-
-.nav a:hover {
-  color: red;
-}
+/*  --- Main ---  */
 
 .main {
   width: 1110px;
@@ -98,15 +110,14 @@ hr {
   overflow: hidden;
 }
 
-.photo-wrap {
+.cat-wrap {
   width: 260px;
   height: 200px;
   position: relative;
   overflow: hidden;
 }
 
-
-.photo {
+.cat-wrap-photo {
   max-width: 260px;
   max-height: 200px;
   transition: 500ms ease;
@@ -115,12 +126,12 @@ hr {
   object-fit: contain;
 }
 
-.photo:hover {
+.cat-wrap-photo:hover {
   opacity: 0.9;
   transform: scale(1.1);
 }
 
-.name {
+.cat-name {
   font-size: 24px;
   color: darkblue;
   display: block;
@@ -129,21 +140,21 @@ hr {
   transition: 100ms ease;
 }
 
-.name:hover {
+.cat-name:hover {
   color: red;
 }
 
-.age {
+.cat-age {
   font-size: 16px;
   display: block;
   transition: 100ms ease;
 }
 
-.age:hover {
+.cat-age:hover {
   text-decoration: underline;
 }
 
-.to-buy-button {
+.cat-button {
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -154,15 +165,15 @@ hr {
   background-position: center;
 }
 
-.to-buy-button:hover {
+.cat-button:hover {
   transform: scale(1.1);
 }
 
-.to-buy-button:active {
+.cat-button:active {
   background-image: url(/icons/heart-button.png);
 }
 
-.price {
+.cat-price {
   font-size: 24px;
   font-weight: 700;
   padding: 0 0 5px 0;
@@ -170,11 +181,11 @@ hr {
   color: brown;
   transition: 100ms ease;
 }
-.price:hover {
+.cat-price:hover {
   color: red;
 }
 
-p {
+.cat-about {
   text-align: justify;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -183,6 +194,9 @@ p {
 a {
   text-decoration: none;
 }
+
+
+/*  --- Footer ---  */
 
 footer {
   max-width: 1110px;
